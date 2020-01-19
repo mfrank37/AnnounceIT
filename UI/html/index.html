@@ -5,6 +5,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link href='../css/style.css' rel='stylesheet' type="text/css">
         <link rel="shortcut icon" href="../img/AnnounceIT-logo.png">
+        <script src="../js/script.js"></script>
         <title>Home | AnnounceIT</title>
     </head>
     <body class="body">
@@ -14,12 +15,27 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#">Create Announcement</a></li>
+                <li><a href="#">My Announcements</a></li>
+                <li><a href="#">My Blacklist</a></li>
             </ul>
         </nav>
         <div class="announcements">
-            <div class="announcement">
+            <div class="filters">
+                <span>Filter or Specify</span>
+                <select id="filter">
+                    <option selected>None</option>
+                    <option value="accepted">accepted</option>
+                    <option value="declined">declined</option>
+                    <option value="active">active</option >
+                    <option value="deactive">deactive</option>
+                </select>
+            </div>
+            <div class="announcement" onclick="showAnnouncement();">
                 <h4 class="a-header">
                     <span>Title of the title</span>
+                    <button class="report">Report/Flag</button>
+                    <button class="block">Block Author</button>
                 </h4>
                 <div class="a-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -28,6 +44,20 @@
                       expedita saepe eveniet, iure aperiam sapiente repellat enim architecto.
                 </div>
             </div>
+            <div class="announcement" onclick="showAnnouncement();">
+                <h4 class="a-header">
+                    <span>Title of the title</span>
+                    <button class="report">Report/Flag</button>
+                    <button class="block">Block Author</button>
+                </h4>
+                <div class="a-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                     Voluptas accusantium nemo adipisci fuga aliquid aspernatur<br>
+                      delectus blanditiis tempore perferendis distinctio iusto <br>
+                      expedita saepe eveniet, iure aperiam sapiente repellat enim architecto.
+                </div>
+            </div>
+            
         </div>
         
     
