@@ -1,0 +1,413 @@
+/* Color Theme Swatches in Hex
+.Color-Theme-21-1-hex { color: #9C1B31; }
+.Color-Theme-21-2-hex { color: #109675; }
+.Color-Theme-21-3-hex { color: #F1C059; }
+.Color-Theme-21-4-hex { color: #F36F63; }
+.Color-Theme-21-5-hex { color: #50B0AE; }
+
+ Color Theme Swatches in RGBA
+.Color-Theme-21-1-rgba { color: rgba(156, 27, 49, 1); }
+.Color-Theme-21-2-rgba { color: rgba(16, 150, 117, 1); }
+.Color-Theme-21-3-rgba { color: rgba(241, 192, 89, 1); }
+.Color-Theme-21-4-rgba { color: rgba(243, 111, 99, 1); }
+.Color-Theme-21-5-rgba { color: rgba(80, 176, 174, 1); }
+
+ Color Theme Swatches in HSLA
+.Color-Theme-21-1-hsla { color: hsla(349, 70, 35, 1); }
+.Color-Theme-21-2-hsla { color: hsla(165, 80, 32, 1); }
+.Color-Theme-21-3-hsla { color: hsla(40, 84, 64, 1); }
+.Color-Theme-21-4-hsla { color: hsla(5, 85, 67, 1); }
+.Color-Theme-21-5-hsla { color: hsla(178, 37, 50, 1); }
+*/
+.body{
+    padding: unset;
+    margin: unset;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    text-align: center;
+    background-color: #109675;
+    font-weight: 800;
+    height: 65px;
+
+}
+.header span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    letter-spacing:0.1px;
+    padding-left: 0px ;
+}
+.Announce{
+    color:  #F36F63;
+}
+.IT{
+    color: #F1C059;
+}
+body{
+    background-color: white;
+    margin: unset;
+    padding: unset;
+}
+nav ul{
+    height: 40px;
+    background-color: #ddd;;
+    color: #50B0AE;
+    padding: unset;
+    text-align: center;
+    margin: unset;
+
+}
+nav ul li{
+    padding-top: 7px;
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    margin: unset;
+    background-color: inherit;
+}
+nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top:0px;
+    overflow: hidden;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #4499dd;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    background-color: #ddd;
+}
+nav ul li a:hover{
+    
+    color: #F1C059;
+    background-color: #109675;
+    box-shadow: 1px 1px 2px 2px #109675;
+}
+nav ul li:hover{
+    background-color: #F36F63;
+    box-shadow: 1px 1px 2px 2px #F36F63;
+}
+footer{
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    color: #bbaaaa;
+    text-align: center;
+    background-color: #555577;
+}
+.announcements{
+    padding: 5px;
+    border-radius: 5px;
+    border:5px black;
+    width: 85%;
+    background: #dfdfdf;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.filters{
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 35px;
+}
+.filters span{
+    color: #777799;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.filters select, #announcementFooter select{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    background-color: #e5e5fe;
+    color: #447;
+    border-radius: 4px;
+    margin: 10px;
+}
+.signin-form{
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+    border: 1px solid #109675;
+    background-color: #ddf;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.signin-form span, .signup-form span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.signin-form label{
+    display: inline-block;
+    width: 100%;
+}
+.signin-form input{
+    display: inline-block;
+    color: #338;
+    width: 90%;
+    font-weight: 700;
+    font-size: 20px;
+}
+.signin-form input[type='submit'], .signup-form input[type='submit']{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    background-color: #50B0AE;
+}
+.signin-form input[type='submit']:hover, .signup-form input[type='submit']:hover{
+    background-color: white;
+    color: #50B0AE;
+    border: 3px solid #50B0AE;
+    cursor: pointer;
+}
+.signin-form input::placeholder, .signup-form input::placeholder{
+    color: #ccc;
+}
+.signup-form input[type='submit']{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 2px;
+}
+.signup-form{
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+    border: 1px solid #109675;
+    background-color: #ddf;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 23px;
+}
+.signup-form label{
+    display: inline-block;
+    width: 100%;
+}
+.signin-form input, .signup-form input[type='text'], .signup-form input[type='password'],.signup-form input[type='email'], .signup-form input[type='tel']{
+    font-size: 23px;
+    display: inline-block;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+}
+label sup{
+    color: #CC1111;
+    font-size: 12px;
+}
+#announcementFooter .deleteButton{
+    font-size: 14px;
+    background-color: #ff6611;
+    padding: 4px;
+    margin-left: 40px;
+    border-radius: 30%;
+    color: white;
+}
+#announcementFooter .deleteButton:hover{
+    background: white;
+    font-weight: 900;
+    padding: 2px;
+    color: #ff6611;
+}
+#announcementFooter .update{
+    margin-left: 40px;
+}
+#announcementFooter .update:hover{
+    font-weight: 900;
+}
+.signin-form a, .signup-form a, #announcementFooter .update{
+    font-size: 14px;
+    background-color: #338;
+    padding: 4px;
+    border-radius: 30%;
+    text-decoration: none;
+    color: #F1C059;
+}
+.signup-form a:hover, .signin-form a:hover, #announcementFooter .update:hover{
+    background-color: #F1C059;
+    color: #338;
+}
+.create-announcement{
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(222, 230, 222);
+    padding-bottom: 50px;
+    border-radius: 3px;
+}
+
+
+.send-announcement{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    float: right;
+    font-size: 30px;
+    margin: 10px;
+    color: #F1C059;
+    background-color: #447;
+    border: 3px solid #F1C059;
+    font-family: Verdana,  Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.send-announcement:hover{
+    color: #447;
+    background-color: #F1C059;
+    cursor: pointer;
+    border: 3px solid #447;    
+}
+.create-announcement label{
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    color: #227;
+    display: inline-block;
+    margin-left: 5%;
+    width: 25%;
+}
+input[name="author"]{
+    border-radius: 15px;
+    padding-left: 15px;
+    background-color: #ccc;
+    color: #aac;
+    font-weight: 600;
+    height: 27px;
+    width: 25%;
+    margin-right: 40%;
+    font-size: 25px;
+}
+input[name='announcementTitle']{
+    border-radius: 15px;
+    padding-left: 15px;
+    background-color: white;
+    color: #228;
+    font-weight: 600;
+    height: 27px;
+    width: 65%;
+    margin-top: 10px;
+    font-size: 25px;
+}
+textarea{
+    border-radius: 15px;
+    padding-left: 15px;
+    height: 100px;
+    background-color: white;
+    color: #005;
+    width: 65%;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.announcement{
+    background-color: white;
+    margin: 5px;
+    overflow: hidden;
+    
+    width: 98%;
+    cursor: pointer;
+}
+.announcement:hover{
+    border: 1px solid #50B0AE;
+    border-radius: 6px;
+}
+.announcement .a-header span{
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 20px;
+    background-color: white;
+    color: #345;
+    margin: unset;
+    font-family: Verdana,'Segoe UI', Tahoma, Geneva, sans-serif;
+    width: 70%;
+}
+.report, .block{
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(195, 205, 218);
+}
+.report{
+    background-color: red;
+    color: white;
+}
+.report:hover, .block:hover{
+    background: #ff6611;
+}
+.announcement .a-body{
+    width: 100%;
+    background: #DEDEFFAA;
+}
+.fullScreen{
+    background-color: rgba(140,140,190,0.6);
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.viewAnnouncement{
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    height:75%;
+    position: fixed;
+    top: 15%;
+    right: 25%;
+    z-index: 2;
+}
+#title{
+    border-top: 10px;
+    background: #109675;
+    width: 100%;
+    height: 15%;
+    color: #aaffcc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 30px;
+}
+#title span{
+    color: #F1C059;
+}
+#title a{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    padding: 2px;
+    color: pink;
+    background: #DD2222;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#title a:hover{
+    background: #F36F63;
+
+    border: 2px solid #DD2222;
+}
+#description{
+    background: white;
+    width: 100%;
+    height: 75%;
+    font-size: 20px;
+}
+#announcementFooter{
+    width: 100% ;
+    height: 10%;
+    font-size: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #109675;
+}
+/* Color Theme Swatches in Hex
+.Color-Theme-21-1-hex { color: #9C1B31; }
+.Color-Theme-21-2-hex { color: #109675; }
+.Color-Theme-21-3-hex { color: #F1C059; }
+.Color-Theme-21-4-hex { color: #F36F63; }
+.Color-Theme-21-5-hex { color: #50B0AE; } */
