@@ -39,9 +39,9 @@ const showAnnouncement = () => {
           announcementFooter.appendChild(update);
           announcementFooter.appendChild(deleteButton);
         
-        let descriptionText = document.createTextNode('Where will go the description of the Announcement');
+        let descriptionText = document.createTextNode('Here will go the description of the Announcement');
 
-      title.innerHTML = `Title :<span>${'tHE TITLE WILL GO HERE'}</span><a id='close' onclick='clearAll();'>close</a>`;
+      title.innerHTML = `Title :<span>${'THE TITLE WILL GO HERE'}</span><a id='close' onclick='clearAll();'>close</a>`;
       description.appendChild(descriptionText);
 
       viewAnnouncement.appendChild(title);

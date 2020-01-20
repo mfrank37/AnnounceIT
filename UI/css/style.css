@@ -100,11 +100,12 @@ footer{
     background-color: #555577;
 }
 .announcements{
+    margin-top: 15px;
     padding: 5px;
     border-radius: 5px;
     border:5px black;
     width: 85%;
-    background: #dfdfdf;
+    background: #DDDDFA;
     margin-left: 10%;
     margin-right: 10%;
 
@@ -128,6 +129,8 @@ footer{
     margin: 10px;
 }
 .signin-form{
+    padding: 10px;
+    padding-top: 10px;
     margin-left: 35%;
     margin-right: 35%;
     border-radius: 10px;
@@ -143,6 +146,8 @@ footer{
     font-size: 13px;
 }
 .signin-form label{
+    text-align: left;
+    padding-left: 22px;
     display: inline-block;
     width: 100%;
 }
@@ -176,6 +181,7 @@ footer{
     padding: 2px;
 }
 .signup-form{
+    padding: 10px;
     margin-left: 35%;
     margin-right: 35%;
     border-radius: 10px;
@@ -186,6 +192,8 @@ footer{
     font-size: 23px;
 }
 .signup-form label{
+    text-align: left;
+    padding-left: 22px;
     display: inline-block;
     width: 100%;
 }
@@ -200,27 +208,7 @@ label sup{
     color: #CC1111;
     font-size: 12px;
 }
-#announcementFooter .deleteButton{
-    font-size: 14px;
-    background-color: #ff6611;
-    padding: 4px;
-    margin-left: 40px;
-    border-radius: 30%;
-    color: white;
-}
-#announcementFooter .deleteButton:hover{
-    background: white;
-    font-weight: 900;
-    padding: 2px;
-    color: #ff6611;
-}
-#announcementFooter .update{
-    margin-left: 40px;
-}
-#announcementFooter .update:hover{
-    font-weight: 900;
-}
-.signin-form a, .signup-form a, #announcementFooter .update{
+.signin-form a, .signup-form a{
     font-size: 14px;
     background-color: #338;
     padding: 4px;
@@ -228,7 +216,7 @@ label sup{
     text-decoration: none;
     color: #F1C059;
 }
-.signup-form a:hover, .signin-form a:hover, #announcementFooter .update:hover{
+.signup-form a:hover, .signin-form a:hover{
     background-color: #F1C059;
     color: #338;
 }
@@ -236,14 +224,41 @@ label sup{
     text-align: center;
     margin-top: 10px;
     padding-top: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: rgb(222, 230, 222);
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     border-radius: 3px;
+    margin-bottom: 25px;
 }
-
-
+#announcementFooter .update{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #338;
+    border-radius: 5px;
+    color: #F19F59;
+    border: 1px solid #F19F59;
+    font-size: 20px;
+}
+#announcementFooter .update:hover{
+    background-color: #F19F59;
+    color: #338;
+    border: 1px solid #F19F59;
+}
+.deleteButton{
+    background-color: #DD2222;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    font-size: 20px;
+}
+.deleteButton:hover{
+    background-color: white;
+    border-radius: 5px;
+    color: #DD2222;
+    border: 1px solid #DD2222;
+    font-size: 20px;
+}
 .send-announcement{
     height: 40px;
     width: 120px;
@@ -251,9 +266,9 @@ label sup{
     float: right;
     font-size: 30px;
     margin: 10px;
+    margin-right: 4.5%;
     color: #F1C059;
     background-color: #447;
-    border: 3px solid #F1C059;
     font-family: Verdana,  Tahoma, Geneva, Verdana, sans-serif;
     
 }
@@ -261,27 +276,26 @@ label sup{
     color: #447;
     background-color: #F1C059;
     cursor: pointer;
-    border: 3px solid #447;    
 }
 .create-announcement label{
     font-size: 20px;
     font-family: 'Arial Narrow Bold', sans-serif;
-    text-align: right;
+    text-align: left;
     color: #227;
     display: inline-block;
     margin-left: 5%;
-    width: 25%;
+    width: 100%;
 }
 input[name="author"]{
     border-radius: 15px;
-    padding-left: 15px;
-    background-color: #ccc;
+    background-color: #eee;
     color: #aac;
     font-weight: 600;
     height: 27px;
-    width: 25%;
-    margin-right: 40%;
+    display: block;
+    margin-left: 5%;
     font-size: 25px;
+    width: fit-content;
 }
 input[name='announcementTitle']{
     border-radius: 15px;
@@ -290,27 +304,43 @@ input[name='announcementTitle']{
     color: #228;
     font-weight: 600;
     height: 27px;
-    width: 65%;
+    width: 90%;
     margin-top: 10px;
     font-size: 25px;
 }
+input{
+    border: 1px solid #109675;
+    padding-left: 15px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #F19F59;
+  }
 textarea{
     border-radius: 15px;
     padding-left: 15px;
-    height: 100px;
+    height: 250px;
     background-color: white;
     color: #005;
-    width: 65%;
+    width: 90%;
     margin-top: 10px;
     font-size: 15px;
+    resize: none;
+    border: 1px solid #109675;
 }
+textarea:focus{
+    outline: none;
+    border: 1px solid #F19F59;
+  }
 .announcement{
     background-color: white;
-    margin: 5px;
+    margin: 10px;
     overflow: hidden;
-    
-    width: 98%;
+    width: 96%;
     cursor: pointer;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 10px;
 }
 .announcement:hover{
     border: 1px solid #50B0AE;
@@ -366,12 +396,14 @@ textarea{
 #title{
     border-top: 10px;
     background: #109675;
-    width: 100%;
+    width: 98.5%;
     height: 15%;
     color: #aaffcc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     font-size: 30px;
+    padding-left: 10px;
+    border-left: 1px solid #109675;
 }
 #title span{
     color: #F1C059;
@@ -388,26 +420,30 @@ textarea{
 }
 #title a:hover{
     background: #F36F63;
-
-    border: 2px solid #DD2222;
 }
 #description{
     background: white;
-    width: 100%;
+    width: 98.5%;
     height: 75%;
     font-size: 20px;
+    padding-left: 10px;
+    border-right: 1px solid white;
 }
 #announcementFooter{
-    width: 100% ;
+    width: 98.5%;
     height: 10%;
     font-size: 15px;
+    color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background: #109675;
+    padding-left: 10px;
+    border-right: 1px solid #109675;
 }
 /* Color Theme Swatches in Hex
 .Color-Theme-21-1-hex { color: #9C1B31; }
 .Color-Theme-21-2-hex { color: #109675; }
 .Color-Theme-21-3-hex { color: #F1C059; }
-.Color-Theme-21-4-hex { color: #F36F63; }
+.Color-Theme-21-4-hex { color: #F36F63;
+focus }
 .Color-Theme-21-5-hex { color: #50B0AE; } */

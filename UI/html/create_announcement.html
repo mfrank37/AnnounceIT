@@ -15,17 +15,16 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="create_announcement.html">Create Announcement</a></li>
-                <li><a href="my_announcements.html">My Announcements</a></li>
-                <li><a href="my_blacklist.html">My Blacklist</a></li>
+                <li><a href="#">My Announcements</a></li>
+                <li><a href="#">My Blacklist</a></li>
             </ul>
         </nav>
         <form action="" method="POST" class="create-announcement">
 
-            <label for="author">Author</label> <input type="text" name="author" value="Author's Name" disabled><br>
-            <label for="announcementTitle">Write Announcement Title :</label> <input type="text" name="announcementTitle" required maxlength="200" minlength="5" autofocus><br>
+            <label for="author">Author :</label> <input type="text" name="author" value="Author's Name" disabled>
+            <label for="announcementTitle">Write Announcement Title :</label> <input type="text" name="announcementTitle" required maxlength="200" minlength="5" autofocus>
             <label for='announcement' required>Write Your Announcement : </label>
-            <textarea name='announcement'>Write here...</textarea>
-            <br>
+            <textarea name='announcement' placeholder="Write here..."></textarea>
             <input type="submit" class="send-announcement" value="POST">
         </form>
         <footer>
