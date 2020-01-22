@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link href='../css/style.css' rel='stylesheet' type="text/css">
+        <link rel="shortcut icon" href="../img/AnnounceIT-logo.png">
+        <title>Home | AnnounceIT</title>
+    </head>
+    <body class="body">
+        <header class="header">
+            <span class="Announce">Announce</span><span class='IT'>IT</span>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create_announcement.html">Create Announcement</a></li>
+                <li><a href="#">My Announcements</a></li>
+                <li><a href="#">My Blacklist</a></li>
+            </ul>
+        </nav>
+        <form action="" method="POST" class="create-announcement">
+
+            <label for="author">Author :</label> <input type="text" name="author" value="Author's Name" disabled>
+            <label for="announcementTitle">Write Announcement Title :</label> <input type="text" name="announcementTitle" required maxlength="200" minlength="5" autofocus>
+            <label for='announcement' required>Write Your Announcement : </label>
+            <textarea name='announcement' placeholder="Write here..."></textarea>
+            <input type="submit" class="send-announcement" value="POST">
+        </form>
+        <footer>
+            <img src="../img/AnnounceIT-logo.png" height="20px">&copy; AnnounceIT
+        </footer>
+    </body>
+</html>
